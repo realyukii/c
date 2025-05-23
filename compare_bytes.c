@@ -24,7 +24,7 @@ int main(void)
 			break;
 		ptr++;
 	}
-end:
+
 	if (valid)
 		printf("%s is a valid HTTP method\n", buf);
 	else
