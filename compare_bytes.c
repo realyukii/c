@@ -1,6 +1,7 @@
 #include <string.h>
 #include <stdio.h>
 
+/* so many pointer pointer to pointer of pointer, i love pointer :v */
 int main(void)
 {
 	const char buf[] = "HEAD";
