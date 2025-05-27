@@ -1,0 +1,30 @@
+C knowledge base
+
+from https://stackoverflow.com/questions/5103726/what-are-qualifiers-in-the-c-language:
+the keywords `short` `long` `unsigned` `signed`, `const`, etc are called qualifiers for a variable.
+
+while `static` `extern` `inline` are qualifiers for a function.
+---
+
+from chapter 6 - structures of https://courses.physics.ucsd.edu/2014/Winter/physics141/Labs/Lab1/The_C_Programming_Language.pdf
+A structure is a collection of one or more variables, possibly of different types, grouped together under a single name for convenient handling.
+
+A structure declaration that is not followed by a list of variables reserve no storage.
+
+A structure declaration consist of:
+struct tag_name {
+    data_type member;
+};
+---
+
+from chapter 6.7 of https://courses.physics.ucsd.edu/2014/Winter/physics141/Labs/Lab1/The_C_Programming_Language.pdf
+C provide a facility called typedef for creating new data type names.
+---
+
+from https://stackoverflow.com/questions/47202557/what-is-a-designated-initializer-in-c:
+Designated initialisers
+1. it provides a quick way of initialising specific elements in an array
+2. it provides a way of explicitly initialising struct members
+
+the GNU extension of the standard also have support to iniitialise in range, from https://gcc.gnu.org/onlinedocs/gcc/Designated-Inits.html:
+To initialize a range of elements to the same value, write `[first ... last] = value`. This is a GNU extension.
