@@ -2,7 +2,7 @@
 #include <stdbool.h>
 
 #define MAX_QUEUE 100
-
+/* credit: geeksforgeeks https://www.geeksforgeeks.org/queue-in-c/ */
 struct Queue
 {
     int array[MAX_QUEUE];
