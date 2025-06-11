@@ -1,4 +1,7 @@
-/* compile and examine it on GDB to see the difference. */
+/*
+* compile and examine it on GDB to see the difference.
+* https://stackoverflow.com/questions/3047530/flexible-array-member-in-c-structure
+*/
 struct arr {
 	int item;
 	char flex_array[];
