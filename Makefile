@@ -1,4 +1,4 @@
-all: build/static_storage build/flex_array build/queue_linked_list build/queue_array build/race_condition build/test_malloc build/compare_bytes build/parser_n_tokenizer
+all: build/bitshift build/static_storage build/flex_array build/queue_linked_list build/queue_array build/race_condition build/test_malloc build/compare_bytes build/parser_n_tokenizer
 
 build/test_malloc: malloc.c build/shared_lib.so
 	gcc $^ -o $@
@@ -18,3 +18,5 @@ build/flex_array: array_in_struct.c
 	gcc $^ -o $@
 build/static_storage: func_ret.c
 	gcc $^ -o $@
+build/bitshift: bitshift.c
+	gcc -g3 -O0 $^ -o $@
