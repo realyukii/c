@@ -51,6 +51,11 @@ enum {
 	EV_BIT_TARGET_DATA	= (0x0003ULL << 48ULL),
 	EV_BIT_CLIENT_DATA	= (0x0004ULL << 48ULL),
 	EV_BIT_TIMER		= (0x0005ULL << 48ULL),
+	/* 0xFF 0xFF = 1 byte = 8 bit = 255 */
+	TEST			= 0x0001ULL,
+	/* 48 bit */
+	TEST2			= 48ULL
+	/* for 64 bit pointer, there is still more unused space 8 bit (?) */
 };
 
 #define ALL_EV_BITS	(EV_BIT_ACCEPT | EV_BIT_EVFD | \
