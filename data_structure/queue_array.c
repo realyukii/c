@@ -34,7 +34,7 @@ void printQueue(struct Queue *q)
     }
 
     puts("current queue:");
-    for (size_t i = q->front + 1; i < q->rear; i++) {
+    for (int i = q->front + 1; i < q->rear; i++) {
         printf("%d ", q->array[i]);
     }
     puts("");

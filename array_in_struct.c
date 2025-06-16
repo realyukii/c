@@ -14,7 +14,9 @@ struct arr2nd {
 
 int main(void)
 {
+	__attribute__((__unused__))
 	struct arr2nd a;
+	__attribute__((__unused__))
 	struct arr b;
 
 	return 0;

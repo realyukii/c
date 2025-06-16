@@ -10,12 +10,14 @@
 
 size_t counter = 0;
 
-void *increment_counter(void *args)
+void *increment_counter(__attribute__((__unused__)) void *args)
 {
 	pthread_t id = pthread_self();
 	printf("thread %lu started incrementing the counter...\n", id);
 	for (size_t i = 0; i < MAX_ITERATION; i++)
 		counter++;
+	
+	return NULL;
 }
 
 int main(void)
